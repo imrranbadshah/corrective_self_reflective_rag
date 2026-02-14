@@ -37,7 +37,7 @@ class Settings(BaseSettings):
 
     # Reranking Settings
     reranker_model: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"
-    reranker_initial_top_k: int = 20
+    reranker_initial_top_k: int = 3
     reranking_enabled_by_default: bool = False
 
     # Reranking Backend Selection
