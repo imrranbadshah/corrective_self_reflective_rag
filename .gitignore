@@ -43,7 +43,7 @@ uv.lock
 
 # Uploads
 uploads/
-*.pdf
+#*.pdf
 !README.md
 *.txt
 *.json
@@ -70,3 +70,4 @@ notebooks/langchain/*
 archived/*
 workflows/README.md
 .claude/*
+tests/*

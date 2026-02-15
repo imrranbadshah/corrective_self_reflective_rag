@@ -31,6 +31,11 @@ class Settings(BaseSettings):
     # Retrieval
     top_k_results: int = 5
 
+    # Hybrid Search Settings
+    hybrid_search_enabled: bool = True
+    sparse_vector_enabled: bool = True
+    rrf_k: int = 60  # RRF fusion parameter
+
     # HYDE Settings
     hyde_num_hypotheses: int = 3
     hyde_enabled_by_default: bool = False
