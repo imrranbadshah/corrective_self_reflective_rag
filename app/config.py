@@ -49,6 +49,10 @@ class Settings(BaseSettings):
     reranker_backend: Literal["local", "voyage"] = "local"
     voyage_api_key: str | None = None
     voyage_model: str = "rerank-2.5"
+    
+    colbert_enabled: bool = True
+    colbert_model: str = "BAAI/bge-m3"
+    colbert_multivector_enabled: bool = True
 
     # Upload
     upload_dir: str = "uploads"
