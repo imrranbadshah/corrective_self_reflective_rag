@@ -1,13 +1,13 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "685057748560.dkr.ecr.us-east-1.amazonaws.com/crag-rag-app:latest",
+    "Name": "975050364113.dkr.ecr.ap-south-1.amazonaws.com/imrranbadshah/crag-rag-app:latest",
     "Update": "true"
   },
   "Ports": [
     {
-      "ContainerPort": "8000",
-      "HostPort": "80"
+      "ContainerPort": 8000,
+      "HostPort": 80
     }
   ],
   "Logging": "/var/log/eb-docker/containers/eb-current-app"
