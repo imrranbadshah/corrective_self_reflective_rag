@@ -27,7 +27,7 @@ ENV/
 env/
 
 # uv
-uv.lock
+# uv.lock is intentionally committed for reproducible builds
 
 # IDE
 .vscode/
