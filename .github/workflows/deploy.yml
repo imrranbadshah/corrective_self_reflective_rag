@@ -7,8 +7,8 @@ on:
 env:
   AWS_REGION: ap-south-1
   ECR_REPOSITORY: imrranbadshah/crag-rag-repo
-  EB_APP_NAME: crag-rag-app # init
-  EB_ENV_NAME: crag-rag-prod # create
+  EB_ENV_NAME: crag-rag-prod # create env - create
+  EB_APP_NAME: crag-rag-app #  create app - init
 
 jobs:
   deploy:

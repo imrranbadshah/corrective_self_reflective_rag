@@ -23,14 +23,20 @@ docker push 975050364113.dkr.ecr.ap-south-1.amazonaws.com/imrranbadshah/crag-rag
 aws ecr describe-images --repository-name imrranbadshah/crag-rag-repo --region ap-south-1 --query 'imageDetails[*].imageTags'
 ```
 
-## Environment Creations command in Beanstalk
+| Level|Command|Name Example|Purpose |
+|------|------|------|------|
+| Application|eb init|crag-rag-app|The high-level project name. |
+| Environment|eb create|crag-rag-prod|"The specific `running instance` for Production." |
+
+
+## Application Creations command in Beanstalk
 ```bash
 eb init crag-rag-prod --platform "Docker running on 64bit Amazon Linux 2023" --region ap-south-1; # manual
 
 eb init crag-rag-prod --platform docker --region ap-south-1;   # Docker/GitActions
 ```
 
-## Application Creations command in Beanstalk
+## Environment  Creations command in Beanstalk
 ```bash
 eb create crag-rag-app --instance-type t3.medium --single; 
 ```
