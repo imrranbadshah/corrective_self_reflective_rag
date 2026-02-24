@@ -2,13 +2,13 @@ name: Deploy to AWS Elastic Beanstalk
 
 on:
   push:
-    branches: [deploy/aws-eb]
+    branches: [dev]
 
 env:
-  AWS_REGION: us-east-1
-  ECR_REPOSITORY: crag-rag-app
-  EB_APP_NAME: crag-rag-appp
-  EB_ENV_NAME: crag-rag-prod
+  AWS_REGION: ap-south-1
+  ECR_REPOSITORY: imrranbadshah/crag-rag-repo
+  EB_APP_NAME: crag-rag-app # init
+  EB_ENV_NAME: crag-rag-prod # create
 
 jobs:
   deploy:
