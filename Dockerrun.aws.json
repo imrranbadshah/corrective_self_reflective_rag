@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "975050364113.dkr.ecr.ap-south-1.amazonaws.com/imrranbadshah/crag-rag-app:latest",
+    "Name": "975050364113.dkr.ecr.ap-south-1.amazonaws.com/imrranbadshah/crag-rag-repo:latest",
     "Update": "true"
   },
   "Ports": [

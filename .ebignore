@@ -16,3 +16,19 @@ __pycache__
 *.tar.gz
 node_modules
 qdrant_storage
+
+
+# <----------------ABOVE by class / Below is OWN config -------------->
+# Ignore everything
+# *
+
+# Include Dockerrun
+
+# !Dockerrun.aws.json
+
+# Include EB config if used
+
+# !.ebextensions/
+# !.ebextensions/*
+# !.platform/
+# !.platform/*
